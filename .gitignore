@@ -1,0 +1,10 @@
+# Generated PDFs
+output/*.pdf
+
+# macOS
+.DS_Store
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
