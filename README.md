@@ -47,6 +47,7 @@ my-resume/
 ├── build/
 │   ├── build.sh            # PDF generation script
 │   └── preamble.tex        # LaTeX settings
+├── .env                    # Your personalized defaults (copy from .env.example)
 └── README.md
 ```
 
@@ -70,10 +71,13 @@ my-resume/
 
 ```bash
 # Build default (src/base.md → output/Resume.pdf)
-./build/build.sh
+source .env && ./build/build.sh
 
 # Build specific file with custom output name
 ./build/build.sh src/frontend-dev.md "Jane-Doe-Frontend"
+
+# Customize output name (copy .env.example to .env first)
+# Edit .env and set RESUME_OUTPUT_NAME=Your-Custom-Name
 ```
 
 ## Why This Structure?
