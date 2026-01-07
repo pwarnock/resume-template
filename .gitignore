@@ -1,6 +1,9 @@
 # Generated PDFs
 output/*.pdf
 
+# Environment configuration
+.env
+
 # macOS
 .DS_Store
 
