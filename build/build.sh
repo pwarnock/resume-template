@@ -6,6 +6,10 @@
 # Usage: ./build/build.sh [source.md] [output-name]
 #   source.md   - Path to markdown file (default: src/base.md)
 #   output-name - Output filename without extension (default: Resume)
+#
+# Environment variables (set in .env):
+#   RESUME_OUTPUT_NAME   - Default output filename
+#   RESUME_MARGIN        - Page margin (default: 1in)
 
 set -e
 
@@ -15,7 +19,8 @@ PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
 # Default values
 SOURCE="${1:-src/base.md}"
-OUTPUT_NAME="${2:-Resume}"
+OUTPUT_NAME="${2:-${RESUME_OUTPUT_NAME:-Resume}}"
+MARGIN="${RESUME_MARGIN:-1in}"
 
 # Build paths
 SOURCE_PATH="$PROJECT_ROOT/$SOURCE"
@@ -24,15 +29,15 @@ PREAMBLE_PATH="$SCRIPT_DIR/preamble.tex"
 
 # Validate source exists
 if [ ! -f "$SOURCE_PATH" ]; then
-    echo "Error: Source file not found: $SOURCE_PATH"
-    exit 1
+	echo "Error: Source file not found: $SOURCE_PATH"
+	exit 1
 fi
 
 # Generate PDF
 pandoc "$SOURCE_PATH" \
-  -o "$OUTPUT_PATH" \
-  -V geometry:margin=1in \
-  --include-in-header="$PREAMBLE_PATH" \
-  --pdf-engine=pdflatex
+	-o "$OUTPUT_PATH" \
+	-V geometry:margin="$MARGIN" \
+	--include-in-header="$PREAMBLE_PATH" \
+	--pdf-engine=pdflatex
 
 echo "✓ Generated $OUTPUT_PATH"
