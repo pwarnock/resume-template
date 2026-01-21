@@ -1,24 +1,41 @@
 # Your Name
-**Your Title | Your Specialty | Your Focus**
-City, State | (555) 555-5555 | you@email.com | linkedin.com/in/you | github.com/you
+**Your Title | Your Specialty | Your Focus**\
+City, State · (555) 555-5555 · you@email.com\
+linkedin.com/in/you · github.com/you · yourwebsite.com
 
 ## Summary
-A brief 2-3 sentence summary of your experience and what you're looking for. Focus on your unique value proposition and the impact you've made.
 
-## Recent Projects (Optional)
-| Project | Description | Stack |
-|---------|-------------|-------|
-| **project-one** | Brief description of what it does | TypeScript, React |
-| **project-two** | Brief description of what it does | Python, FastAPI |
+A brief 2-3 sentence summary of your experience and what you're looking for. Focus on your unique value proposition and the impact you've made. This should be tailored for each application.
 
-*Portfolio: yourwebsite.com*
+## Core Competencies
 
-## Technical Skills
-**Languages:** List your primary languages
-**Frontend:** Your frontend technologies
-**Backend:** Your backend technologies
-**Cloud & Infrastructure:** AWS, GCP, etc.
-**Other:** Other relevant skills
+**Category One**
+- Skill or competency with context
+- Another related skill or achievement
+- Quantified accomplishment where possible
+
+**Category Two**
+- Skill aligned to target role
+- Related capability or experience
+- Another relevant competency
+
+**Category Three**
+- Technical or domain expertise
+- Process or methodology knowledge
+- Tools or platforms proficiency
+
+## Current Activities (Month Year – Present)
+
+<!-- Use this section for interim work, consulting, or active projects between roles -->
+
+### Role or Project Type
+**Company or Context** | Location | Start Date – Present
+
+Brief description of what you're doing and why it matters.
+
+- Key activity or accomplishment
+- Another significant contribution
+- Skills being developed or applied
 
 ## Professional Experience
 
@@ -36,7 +53,26 @@ Brief context about the role or company (1 line).
 
 - Achievement with measurable result
 - Another key accomplishment
+- Impact on team, product, or business
+
+<!-- Use \newpage to force a page break if needed -->
+\newpage
+
+### Earlier Role
+**Earlier Company** | Location | Start Date – End Date
+
+- Key achievement from this role
+- Another contribution worth highlighting
 
 ## Education & Certifications
-- **Degree** | University Name
-- **Certification** | Issuing Organization (Year)
+
+**Certification Name** | Issuing Organization | Year
+
+**Degree, Major** | University Name | Year
+- Relevant concentration or honors (optional)
+
+## Technical Proficiencies
+
+**Category:** Tool 1, Tool 2, Tool 3, Tool 4
+**Another Category:** Technology A, Technology B, Technology C
+**Third Category:** Skill X, Skill Y, Skill Z

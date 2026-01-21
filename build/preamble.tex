@@ -1,7 +1,51 @@
-\usepackage{microtype}
-\sloppy
+% =============================================================================
+% Resume Preamble - Based on Butterick's Practical Typography
+% https://practicaltypography.com/resumes.html
+% =============================================================================
+
+\usepackage{microtype}    % Subtle character spacing improvements
+\usepackage{setspace}     % Line spacing control
+
+% -----------------------------------------------------------------------------
+% TEXT ALIGNMENT (Butterick: "always left-align" for word processors/pandoc)
+% -----------------------------------------------------------------------------
+% Ragged right is more readable and avoids awkward word spacing
+\AtBeginDocument{\raggedright}
+
+% -----------------------------------------------------------------------------
+% HYPHENATION (Disable for resumes - cleaner line breaks)
+% -----------------------------------------------------------------------------
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
-\brokenpenalty=10000
-\clubpenalty=10000
+
+% Allow flexible line breaking to prevent overfull boxes
+\sloppy
+\emergencystretch=1.5em
+
+% -----------------------------------------------------------------------------
+% LINE SPACING (Butterick: 120-145% of point size)
+% Using 150% - slightly above range for comfortable reading on 2-page resumes.
+% Adjust down to 1.35-1.45 if content is tight, or up to 1.60 for more air.
+% -----------------------------------------------------------------------------
+\setstretch{1.50}
+
+% -----------------------------------------------------------------------------
+% PARAGRAPH SPACING (Resume: tight, no extra space between paragraphs)
+% -----------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\partopsep}{0pt}
+
+% -----------------------------------------------------------------------------
+% LIST SPACING (Butterick: "gentler" formatting, compact lists)
+% -----------------------------------------------------------------------------
+\setlength{\itemsep}{2pt}
+\setlength{\topsep}{4pt}
+\setlength{\parsep}{0pt}
+
+% -----------------------------------------------------------------------------
+% WIDOW/ORPHAN CONTROL (Prevent single lines at page breaks)
+% -----------------------------------------------------------------------------
 \widowpenalty=10000
+\clubpenalty=10000
+\brokenpenalty=4000
